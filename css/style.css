@@ -14,7 +14,7 @@
 .footer{
   background-color: #d1c4e9;
   margin: 0px auto;
-  padding: 20px;
+  padding: 15px;
 }
 
 
@@ -27,6 +27,14 @@
 
 .address{
   font-size: 80%;
-  margin:0px;
+  margin:50px;
   color: #0f0f0f;
 }
+
+.about{
+  border-top: 1px floralwhite;
+}
+
+/* .history{ */
+  /* float: left; */
+/* } */
