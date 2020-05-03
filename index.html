@@ -94,16 +94,16 @@
                 </div>
                 <div  class="col-12 col-sm align-self-center">
                     <img src="/img/logo.png">
-                    
-                    
-                    
-                        <a role="button" class="btn justify-content-right btn-warning bg-warning text-white align-self-center"
-                        data-toggle="tooltip" data-html="true"  title="<strong>Or Call us at <br>+852 12345678</strong>"
-                        data-placement="bottom" href="#reserveform">Reserve Table</a>
-                
             </div>
-        </div>
-    </header>
+                       <div>
+                         <a role="button" class="btn justify-content-right bg-warning text-white"
+                         data-toggle="tooltip" data-html="true"  title="<strong> Or Call us at <br>+852 12345678 </strong>"
+                         data-placement="bottom" href="#reserveform">Reserve Table</a>
+                         </div>
+            
+
+                
+                </header>
 
     <div class ="container">
         <div class="row row-content">
@@ -152,6 +152,15 @@
                     <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
+                    <div class="btn-group" id="carouselButton">
+                        <button class="btn btn-danger btn-sm" id="carousel-pause">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                        <button class="btn btn-danger btn-sm" id="carousel-play">
+                            <span class="fa fa-play"></span>
+                        </button>
+                    </div>
+       
                 </div>
 
              </div>
@@ -311,6 +320,18 @@
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
+        <script>
+            $(document).ready(function(){
+                $("#mycarousel").carousel( { interval: 2000 } );
+                $("#carousel-pause").click(function(){
+                    $("#mycarousel").carousel('pause');
+                });
+                $("#carousel-play").click(function(){
+                    $("#mycarousel").carousel('cycle');
+                });
+            });
+        </script>
+    
 </body>
 
 
